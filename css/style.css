@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+body{ 
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    margin: 100px;
+    border: 2px solid black;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+hr{
+    border: 1px solid white;
+    margin: 40px 5px;
+}
+
+h1{
+    color: white;
+    letter-spacing: 3px;
+}
+
+h2{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: large;
+}
+
+h3{
+    text-transform: uppercase;
+    color: #DA7B93;
+}
+
+header {
+    text-align: center;
+    font-size: 25px;  
+    background-color: #2E151B;
+    padding: 30px 10px 100px 10px;
+    margin: 20px;
+}
+
+section#a {
+    background-color: grey;
+    font-size: 15px;
+    padding: 20px;
+    color: white;
+    margin: 20px;
+}
+
+#photo{
+    width: 100%;
+    float: center;
+    border-radius: 50%;
+}
+
+#languages{
+    font-size: 20px;
+}
+
+#languages img{
+    width: 25%;
+    max-width: 50px;
+}
+
+#skills table{
+    font-size: 15px;
+}
+
+#interests{
+    font-size: 30px;
+}
+
+#interests i{
+    margin: 0px 10px;
+}
+
+section#b{
+    background-color:  #DA7B93;
+    padding: 20px;
+    margin: 20px;
+}    
+
+section#c{
+    padding: 0px 20px 20px 20px;
+    margin: 20px;
+}
+
+[class*="col-"] {
+    float: left;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .col-4 {width: 33.33%;}
+    .col-8 {width: 66.66%;}
+
+    h2{
+        font-size: medium;
+    }
+
+    #interests{
+        font-size: 20px;
+    }
+
+    section#a{
+        margin: 20px 0px 20px 20px;
+    }
+    
+    section#a p{
+        font-size: 9px;
+    }
+    
+    #skills table{
+        font-size: 10px;
+    }
+    
+}
+
+@media only screen and (min-width: 850px) {
+    section#a p{
+        font-size: 11px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    /* For desktop: */
+    .col-4 {width: 33.33%;}
+    .col-8 {width: 66.66%;}
+
+    h2{
+        font-size: large;
+    }
+    #interests{
+        font-size: 30px;
+    }
+      section#a p{
+        font-size: 15px;
+    }
+    #skills table{
+        font-size: 15px;
+    }
+}
