@@ -12,26 +12,25 @@
 
 <body>
     <div class="container">
-        <side id="side">
-            <img id="photo" src="Media/pasfoto.jpg" title="Rianne Streef" alt="Photograph">
+        <side>
+            <img src="Media/pasfoto.jpg" title="Rianne Streef" alt="Photograph">
             <h2>Personal Info</h2>
-            <div id="personal-info">
+            <section id="personal-info">
                 <p><i class="fas fa-phone"></i> +33 6 81 92 78 55 </p>
                 <p><i class="fas fa-at"></i> riannestreef@gmail.com </p>
                 <p><i class="fas fa-map-marker-alt"></i> Val Thorens, France</p>
                 <!-- paragraphs instead of spans to make every item apear on a new line -->
-            </div>
+            </section>
             <hr>
-            <h2>Languages</h2>
-            <div id="languages">
-                <img src="Media/Netherlands-Flag-icon.png" alt="Dutch">
-                <img src="Media/United-Kingdom-flag-icon.png" alt="English"></td>
-                <img src="Media/France-Flag-icon.png" alt="French"></td>
-            </div>
+            <section>
+                <h2>Languages</h2>
+                <img src="Media/Netherlands-Flag-icon.png" alt="Dutch" class="flag">
+                <img src="Media/United-Kingdom-flag-icon.png" alt="English" class="flag"></td>
+                <img src="Media/France-Flag-icon.png" alt="French" class="flag"></td>
+            </section>
             <hr>
             <h2>Skills</h2>
-            <div id="skills">
-                <table>
+                <table class="skills">
                     <tr>
                         <td>HTML</td>
                         <td><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
@@ -48,15 +47,15 @@
                                 class="far fa-star"></i><i class="far fa-star"></i></td>
                     </tr>
                     <tr>
-                        <td>Git(Hub)</td>
+                        <td>Git</td>
                         <td><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
                                 class="far fa-star"></i><i class="far fa-star"></i></td>
                     </tr>
                 </table>
-            </div>
+
             <hr>
             <h2>Interests</h2>
-            <div id="interests">
+            <div class="interests">
                 <i class="fas fa-plane"></i>
                 <i class="fas fa-book"></i>
                 <i class="fas fa-wine-glass"></i>
@@ -69,28 +68,25 @@
             <hr>
             <h2>WEB DEVELOPER</h2>
         </header>
-        <article id="aboutMe">
+        <section  class="aboutMe">
             <h2>About me</h2>
-            I always thought my dream was to own my own restaurant, so I spent 20 years working in restaurants,
-            hotels and bars. But when push came to shove, I realised I wanted something else, something more. Or
-            maybe better said, learn more. My brother motivated me to have a look at coding (which he gravely regrets
-            now that I made him my go to guy for all my questions!) and I am hooked since I started my first
-            tutorial.<br>
-            <br>
-            A big plus about developing is the freedom to do it from where ever I want. From the hammock on my balcony
-            at home overlooking the mountains, or on a Thai Island so I can go snorkeling when I am finished for the
-            day.<br>
-            It also goes very well with my love for organising anything and everything.<br>
-            <br>
-            The design part of the job is a necissity for me to make the rest of the code accessible. The real fun, I
-            think
-            is in the JavaScripts, the servers requests and terminal commands.<br>
-            <br>
-            For now, I am writing in HTML, CSS (SASS) and Javascript. On my list are Node, Express, MongoDB and Vue. And
-            after
-            that, who knows? The possibilities are endless.
-        </article>
-        <article id="history">
+            <p>I always thought my dream was to own my own restaurant, so I spent 20 years working in restaurants,
+                hotels and bars. But when push came to shove, I realised I wanted something else, something more. Or
+                maybe better said, learn more. My brother motivated me to have a look at coding (which he gravely
+                regrets
+                now that I made him my go to guy for all my questions!) and I am hooked since I started my first
+                tutorial.</p>
+            <p>A big plus about developing is the freedom to do it from where ever I want. From the hammock on my
+                balcony
+                at home overlooking the mountains, or on a Thai Island so I can go snorkeling when I am finished for the
+                day. It also goes very well with my love for organising anything and everything.</p>
+            <p>The design part of the job is a necissity for me to make the rest of the code accessible. The real fun, I
+                think is in the JavaScripts, the servers requests and terminal commands.</p>
+            <p>For now, I am writing in HTML, CSS (SASS) and Javascript. On my list are Node, Express, MongoDB and Vue.
+                And
+                after that, who knows? The possibilities are endless.</p>
+        </section >
+        <section class="history">
             <h3>Education</h3>
             <ul>
                 <li>
@@ -117,7 +113,7 @@
                     Directrice Centre Sportif Val Thorens
                     <i class="fas fa-phone"></i> +33 6 81 92 78 55
                 </li>
-        </article>
+        </section>
     </div>
 
 </body>
