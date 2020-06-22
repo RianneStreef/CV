@@ -10,10 +10,10 @@ body{
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat (9, 1fr);
-    grid-gap: 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-rows: repeat (3, 1fr);
+        grid-gap: 20px;
 }
 
 hr{
@@ -153,4 +153,4 @@ ul {
         grid-column: 2/4;
         grid-row: 3/4;
     }
-}
+} 
