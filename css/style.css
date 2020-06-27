@@ -11,8 +11,8 @@
   
   .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(auto, 1fr));
-    grid-template-rows: repeat (3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(100, 1fr));
+    grid-template-rows: repeat (16, 1fr);
     grid-gap: 20px;
   }
   
@@ -31,7 +31,7 @@
     color: white;
     text-transform: uppercase;
     letter-spacing: 3px;
-    font-size: large;
+    font-size: 18px;
   }
   
   h3 {
@@ -41,10 +41,10 @@
   
   side {
     background-color: #424242;
-    font-size: 15px;
+    font-size: 12px;
     padding: 20px;
     color: white;
-    grid-row: 3/6;
+    grid-row: 3/11;
   }
   
   side img {
@@ -61,17 +61,17 @@
   .flag {
     width: 25%;
     max-width: 50px;
-    border-radius: 0%;
+    border-radius: 20%;
   }
   
-  .skills table {
+  .skills {
     font-size: 15px;
   }
   
   .interests i {
     margin: 0px 6px;
     padding: 3px;
-    font-size: 15px;
+    font-size: 13px;
   }
   
   header {
@@ -84,22 +84,23 @@
   .aboutMe {
     background-color: #f48fb1;
     padding: 20px;
-    grid-row: 6/8;
+    grid-row: 11/14;
   }
   
   .aboutMe h2 {
     color: #000000;
   }
+
   .history {
     padding: 0px 20px 20px 20px;
-    grid-row: 8/10;
+    grid-row: 14/17;
   }
   
   ul {
     list-style-type: none;
     padding-left: 0;
   }
-  
+
   @media only screen and (min-width: 350px) {
     .interests i {
       margin: 0px 6px;
@@ -111,8 +112,8 @@
   @media only screen and (min-width: 768px) {
     .container {
       display: grid;
-      grid-template-columns: repeat (3, 1fr);
-      grid-template-rows: repeat (3, 1fr);
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(8, 1fr);
       grid-gap: 20px;
     }
   
@@ -122,30 +123,45 @@
   
     header {
       grid-column: 2/4;
-      grid-row: 1/2;
+      grid-row: 1/3;
     }
   
     side {
       grid-column: 1/2;
-      grid-row: 1/4;
+      grid-row: 1/9;
     }
   
     .aboutMe {
       grid-column: 2/4;
-      grid-row: 2/3;
+      grid-row: 3/6;
     }
   
     .history {
       grid-column: 2/4;
-      grid-row: 3/4;
+      grid-row: 6/9;
     }
+
+    .skills {
+      font-size: 10px;
+    }
+
+    .interests i {
+      margin: 0px 4px;
+      padding: 3px;
+      font-size: 13px;
+    }  
   }
   
+  @media only screen and (min-width: 827px) {
+    .skills {
+      font-size: 13px;
+    }
+
   @media only screen and (min-width: 992px) {
     .container {
       display: grid;
-      grid-template-columns: repeat (3, 1fr);
-      grid-template-rows: repeat (3, 1fr);
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(8, 1fr);
       grid-gap: 20px;
     }
   
@@ -155,23 +171,26 @@
   
     header {
       grid-column: 2/4;
-      grid-row: 1/2;
-      font-weight: bolder;
+      grid-row: 1/3;
     }
   
     side {
       grid-column: 1/2;
-      grid-row: 1/4;
+      grid-row: 1/9;
     }
   
     .aboutMe {
       grid-column: 2/4;
-      grid-row: 2/3;
+      grid-row: 3/6;
     }
   
     .history {
       grid-column: 2/4;
-      grid-row: 3/4;
+      grid-row: 6/9;
     }
+
+    .interests i {
+      font-size: 15px;
+    } 
   }
-  
+}
