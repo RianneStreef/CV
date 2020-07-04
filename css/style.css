@@ -89,10 +89,14 @@
     font-size: 0.8rem; 
   }
 
+  main {
+    grid-row: 11/17;
+  }
+
   .aboutMe {
     background-color: #f48fb1;
     padding: 1.2rem;
-    grid-row: 11/14;
+    /* grid-row: 11/14; */
   }
   
   .aboutMe h2 {
@@ -101,7 +105,7 @@
 
   .history {
     padding: 0 1.2rem 1.2rem 1.2rem;
-    grid-row: 14/17;
+    /* grid-row: 14/17; */
   }
   
   @media only screen and (min-width: 768px) {
@@ -138,14 +142,9 @@
       font-size: 0.9em;
     }
     
-    .aboutMe {
+    main {
+      grid-row: 3/9;
       grid-column: 2/4;
-      grid-row: 2/4;
-    }
-  
-    .history {
-      grid-column: 2/4;
-      grid-row: 4/6;
     }
   }
 
@@ -175,17 +174,12 @@
       font-size: 1rem;
     }
 
-    .skills {
-      font-size: 1rem; 
+    main {
+      grid-row: 3/9;
+      grid-column: 2/4;
     }
 
-    .aboutMe {
-      grid-column: 2/4;
-      grid-row: 3/6;
-    }
-  
-    .history {
-      grid-column: 2/4;
-      grid-row: 6/9;
+    .skills {
+      font-size: 1rem; 
     }
   }
